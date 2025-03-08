@@ -1,3 +1,13 @@
 // @media (max-width: 1235px, 768 планшеты, 480 мобилки) {
 
 // }
+
+
+@media (max-width: 768px) {
+
+	.menu {
+		&__icon {
+			display: block;
+		}
+	}
+}

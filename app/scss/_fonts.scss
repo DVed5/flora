@@ -1,9 +1,29 @@
-// @font-face {
-// 	font-family: 'Quicksand';
-// 	font-weight: 400;
-// 	font-style: normal;
-// 	src:
-// 	url('../fonts/Quicksand-Regular.woff2') format('woff2'),
-// 	url('../fonts/Quicksand-Regular.woff') format('woff');
-// 	font-display: swap;
-// }
+@font-face {
+	font-family: 'CormorantGaramond';
+	font-weight: 400;
+	font-style: normal;
+	src:
+	url('../fonts/CormorantGaramond-Regular.woff2') format('woff2'),
+	url('../fonts/CormorantGaramond-Regular.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CormorantGaramond';
+	font-weight: 700;
+	font-style: normal;
+	src:
+	url('../fonts/CormorantGaramond-Bold.woff2') format('woff2'),
+	url('../fonts/CormorantGaramond-Bold.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: 800;
+	font-style: normal;
+	src:
+	url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+	url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+	font-display: swap;
+}
