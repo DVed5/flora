@@ -80,3 +80,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+//projects
+
+document.getElementById("loadMore").addEventListener("click", function () {
+    document.querySelectorAll(".gallery-item.hidden").forEach(img => {
+        img.classList.remove("hidden");
+    });
+    this.style.display = "none"; // Скрываем кнопку после загрузки всех фото
+});
+
+
+

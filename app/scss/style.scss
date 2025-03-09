@@ -313,5 +313,41 @@
 
 
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+#loadMore {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#loadMore:hover {
+    background: #45a049;
+}
+
+
 
 @import 'media';
