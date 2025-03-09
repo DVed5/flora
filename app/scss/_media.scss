@@ -3,11 +3,330 @@
 // }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
 
-	.menu {
-		&__icon {
+	.top {
+		&__image {
+			height: 80vh;
+		}
+
+		&__subtitle {
+			font-size: 1.875rem;
+		}
+	}
+
+	.about {
+		&__subtitle {
+			margin: 0 0 6rem;
+		}
+
+		&__items {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__item:nth-child(2) {
+			margin-top: 0;
+		}
+
+		&__item:nth-child(3) {
+			margin-top: 0;
+		}
+
+		&__images {
 			display: block;
+			margin: 0 15% 10%;
+		}
+
+		&__img2:nth-child(1) {
+			margin-top: -15%;
+		}
+
+		&__img2:nth-child(2) {
+			z-index: 0;
+			top: 10%;
+			left: 48%;
+		}
+
+		&__img3:nth-child(1) {
+			margin: -19% 0 27%;
+		}
+
+		&__img3:nth-child(3) {
+			display: none;
+		}
+	}
+
+	.philosophy {
+		&__title {
+			padding-top: 8.375rem;
+			margin-bottom: 5.25rem;
+		}
+
+		&__text {
+			width: auto;
+			margin: 0 3rem;
+		}
+	}
+
+	.contacts {
+		&__form {
+			width: 42rem;
+		}
+	}
+}
+
+// планшеты
+@media (max-width: 748px) {
+
+	.top {
+		&__bottom {
+			height: 14.5rem;
+		}
+
+		&__subtitle {
+			font-size: 1.5rem;
+		}
+	}
+
+	.contacts {
+		padding: 6rem 0 3rem;
+
+		&__form {
+			width: 35rem;
+
+			textarea {
+				height: 11rem;
+			}
+		}
+	}
+}
+
+// смартфоны
+@media (max-width: 645px) {
+	.scroll-to-top {
+		width: 3.125rem;
+		height: 3.125rem;
+	}
+
+	.header {
+
+		&__menu-btn {
+			display: block;
+			position: fixed;
+			top: 0.625rem;
+			right: 1.25rem;
+			font-size: 1.5rem;
+			padding: 0.9375rem;
+			background-color: transparent;
+			box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.291);
+			cursor: pointer;
+			transition: opacity 0.3s ease, transform 0.3s ease;
+			z-index: 1001;
+		}
+
+		&__menu-list {
+			position: fixed;
+			top: -1.875rem;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: url('../images/header-btn.jpg') no-repeat center center;
+			background-size: cover;
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			justify-content: start;
+			pointer-events: none;
+			opacity: 0;
+			transition: all .3s;
+			z-index: 1000;
+		}
+
+		&__menu-item {
+			color: #09250c;
+		}
+
+		&__menu-link {
+			padding: 1.25rem 1.875rem 1.25rem 1.25rem;
+			font-size: 1.75rem;
+		}
+
+		&__menu-list.active {
+			pointer-events: auto;
+			opacity: 1;
+		}
+	}
+
+	.top {
+		&__image {
+			height: 50vh;
+		}
+
+		&__bottom {
+			height: 12.5rem;
+		}
+
+		&__subtitle {
+			font-size: 1.2rem;
+		}
+	}
+
+	.about {
+		&__subtitle {
+			font-size: 1.25rem;
+			margin: 0 2.4rem 5rem;
+		}
+
+		&__text {
+			margin: 0 auto 7rem auto;
+		}
+
+		&__images {
+			margin: 0 5% 16%;
+		}
+
+		&__img1:nth-child(2) {
+			top: -19%;
+		}
+
+		&__img2:nth-child(2) {
+			left: 32%;
+		}
+
+		&__img3:nth-child(2) {
+			top: 18%;
+			left: 31%;
+		}
+	}
+
+	.contacts {
+		&__text {
+			width: auto;
+		}
+
+		&__form {
+			width: auto;
+
+			input {
+				padding: .75rem .5rem 1rem;
+			}
+
+			textarea {
+				padding: 1.5rem;
+			}
+		}
+
+		&__form-group {
+			flex-direction: column;
+		}
+	}
+
+}
+
+@media (max-width: 500px) {
+	.top {
+		&__subtitle {
+			font-size: 1.125rem;
+			width: 280px;
+		}
+	}
+
+	.about {
+		padding-top: 3.25rem;
+
+		&__subtitle {
+			font-size: 0.875rem;
+			margin: 0 0 4rem;
+		}
+
+		&__text {
+			width: auto;
+		}
+
+		&__title {
+			font-size: 1rem;
+		}
+
+		&__text {
+			margin: 0 auto 5rem auto;
+		}
+
+		&__images {
+			margin: 0 0 16% 3%;
+		}
+
+		&__img1:nth-child(1) {
+			width: 247px;
+			height: 278px;
+		}
+
+		&__img1:nth-child(2) {
+			width: 198px;
+			height: 316px;
+		}
+
+		&__img2:nth-child(1) {
+			width: 257px;
+			height: 354px;
+		}
+
+		&__img2:nth-child(2) {
+			width: 190px;
+			height: 261px;
+		}
+
+		&__img3:nth-child(1) {
+			width: 205px;
+			height: 290px;
+			margin: -15% 0 27%;
+		}
+
+		&__img3:nth-child(2) {
+			width: 209px;
+			height: 363px;
+		}
+	}
+
+	.philosophy {
+		padding-bottom: 3rem;
+
+		&__title {
+			font-size: 1.5rem;
+			padding-top: 4rem;
+			margin-bottom: 3rem;
+		}
+
+		&__text {
+			margin: 0;
+			font-size: 1.125rem;
+		}
+	}
+
+	.contacts {
+		padding: 4rem 0 1rem;
+
+		&__subtitle {
+			font-size: 1.2rem;
+		}
+
+		&__text {
+			font-size: 1.25rem;
+		}
+
+		&__form {
+			padding: 1.2rem 1.2rem 3rem;
+
+			button {
+				width: 50%;
+			}
+
+			input,
+			textarea,
+			input::placeholder,
+			textarea::placeholder {
+				font-size: 1rem;
+			}
 		}
 	}
 }
