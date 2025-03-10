@@ -16,6 +16,9 @@
 	}
 
 	.about {
+		background-position: center right;
+		background-size: 21rem;
+
 		&__subtitle {
 			margin: 0 0 6rem;
 		}
@@ -74,6 +77,18 @@
 			width: 42rem;
 		}
 	}
+
+
+	.projects-top {
+		&__img:nth-child(2) {
+			left: 34%;
+		}
+
+		&__img:nth-child(3) {
+			top: 51%;
+			z-index: -1;
+		}
+	}
 }
 
 // планшеты
@@ -89,6 +104,10 @@
 		}
 	}
 
+	.about {
+		background-size: 15rem;
+	}
+
 	.contacts {
 		padding: 6rem 0 3rem;
 
@@ -98,6 +117,28 @@
 			textarea {
 				height: 11rem;
 			}
+		}
+	}
+
+	.projects-top {
+		&__img {
+			max-width: 70%;
+			height: auto;
+		}
+
+		&__img:nth-child(2) {
+			max-width: 50%;
+		}
+
+		&__img:nth-child(3) {
+			top: 51%;
+			z-index: -1;
+		}
+	}
+
+	.projects-gallery {
+		&__text {
+			width: auto;
 		}
 	}
 }
@@ -222,6 +263,52 @@
 		}
 	}
 
+	.projects-page .header__menu-list {
+		top: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		height: 104vh;
+
+		.header__menu-item {
+			margin-top: 14px;
+		}
+	}
+
+	.projects-top {
+		margin: 6rem 1rem 5rem;
+
+		&__img:nth-child(1) {
+			max-width: 100%;
+		}
+
+		&__img:nth-child(2) {
+			max-width: 39%;
+			left: 39%;
+			top: 12%;
+		}
+
+		&__img:nth-child(3) {
+			max-width: 60%;
+			right: 4%;
+			top: 66%;
+		}
+	}
+
+	.gallery-item {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.projects-gallery {
+		&__text {
+			margin: 7rem auto 5rem;
+			font-size: 1.25rem;
+		}
+	}
+
+	#loadMore {
+		font-size: 19px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -234,6 +321,8 @@
 
 	.about {
 		padding-top: 3.25rem;
+		background-position: center right;
+		background-size: 6rem;
 
 		&__subtitle {
 			font-size: 0.875rem;
@@ -327,6 +416,36 @@
 			textarea::placeholder {
 				font-size: 1rem;
 			}
+		}
+	}
+
+	.projects-top {
+		margin: 6rem .75rem 5rem;
+
+		&__img:nth-child(1) {
+			max-width: 73%;
+		}
+
+		&__img:nth-child(2) {
+			max-width: 54%;
+			left: 57%;
+			top: 23%;
+		}
+
+		&__img:nth-child(3) {
+			max-width: 82%;
+			right: -4%;
+			top: 82%;
+		}
+	}
+
+	.gallery-item {
+		width: 77%;
+	}
+
+	.projects-gallery {
+		&__text {
+			font-size: 1.125rem;
 		}
 	}
 }

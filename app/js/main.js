@@ -82,12 +82,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //projects
 
+function updateVisibleImages() {
+	const gallery = document.querySelector(".gallery");
+	const computedStyle = window.getComputedStyle(gallery);
+	const columns = computedStyle.getPropertyValue("grid-template-columns").split(" ").length;
+
+	// Все изображения
+	const allImages = document.querySelectorAll(".gallery-item");
+
+	// Скрываем все
+	allImages.forEach(img => {
+			img.classList.add("hidden");
+	});
+
+	let imagesToShow = columns === 1 ? 3 : columns; // Если 1 колонка — показываем 3, иначе по количеству колонок
+
+	// Показываем нужное количество изображений
+	for (let i = 0; i < imagesToShow; i++) {
+			if (allImages[i]) {
+					allImages[i].classList.remove("hidden");
+			}
+	}
+}
+
+// Обновляем при загрузке и изменении экрана
+window.addEventListener("load", updateVisibleImages);
+window.addEventListener("resize", updateVisibleImages);
+
+// Кнопка "Посмотреть еще"
 document.getElementById("loadMore").addEventListener("click", function () {
-    document.querySelectorAll(".gallery-item.hidden").forEach(img => {
-        img.classList.remove("hidden");
-    });
-    this.style.display = "none"; // Скрываем кнопку после загрузки всех фото
+	document.querySelectorAll(".gallery-item.hidden").forEach(img => img.classList.remove("hidden"));
+	this.style.display = "none"; // Скрываем кнопку
 });
+
 
 
 
