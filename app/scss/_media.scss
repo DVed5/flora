@@ -199,6 +199,37 @@
 		}
 	}
 
+	.footer {
+		display: block;
+		background-color: #27402a;
+		color: #dfd4c4;
+		text-align: left;
+		padding: 30px 10px 15px 20px;
+		font-size: 1rem;
+
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		&__title {
+			text-transform: uppercase;
+		}
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+		}
+	}
+
 	.top {
 		&__image {
 			height: 50vh;
