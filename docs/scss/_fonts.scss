@@ -3,9 +3,8 @@
 	font-weight: 400;
 	font-style: normal;
 	src:
-	url('../fonts/CormorantGaramond-Regular.woff2') format('woff2'),
-	url('../fonts/CormorantGaramond-Regular.woff') format('woff');
-	font-display: swap;
+	url('../fonts/CormorantGaramond-Regular.woff') format('woff'),
+	url('../fonts/CormorantGaramond-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,9 +12,8 @@
 	font-weight: 700;
 	font-style: normal;
 	src:
-	url('../fonts/CormorantGaramond-Bold.woff2') format('woff2'),
-	url('../fonts/CormorantGaramond-Bold.woff') format('woff');
-	font-display: swap;
+	url('../fonts/CormorantGaramond-Bold.woff') format('woff'),
+	url('../fonts/CormorantGaramond-Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -23,7 +21,6 @@
 	font-weight: 800;
 	font-style: normal;
 	src:
-	url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
-	url('../fonts/OpenSans-ExtraBold.woff') format('woff');
-	font-display: swap;
+	url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+	url('../fonts/OpenSans-ExtraBold.woff2') format('woff2');
 }
