@@ -37,6 +37,7 @@
 	}
 
 	&__menu-btn {
+		color: #000;
 		display: none;
 	}
 }
@@ -78,9 +79,11 @@
 .about {
 	color: #09250C;
 	padding-top: 6.25rem;
+	background-image: url('../images/about-bg.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 33.375rem;
+
 
 	&__subtitle {
 		margin: 0 0 7.5rem;
@@ -138,42 +141,42 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		position: relative;
-
-		img {
-			object-fit: cover;
-		}
 	}
 
-	&__img1:nth-child(2) {
+	&__image {
+		object-fit: cover;
+	}
+
+	&__img1-right {
 		position: absolute;
 		top: -30%;
 		left: 30%;
 		z-index: 2;
 	}
 
-	&__img2:nth-child(1) {
+	&__img2-left {
 		margin-top: -28%;
 	}
 
-	&__img2:nth-child(2) {
+	&__img2-right {
 		position: absolute;
 		z-index: -1;
 		top: -5%;
 		left: 35%;
 	}
 
-	&__img3:nth-child(1) {
+	&__img3-left {
 		margin: -30% 0 120%;
 	}
 
-	&__img3:nth-child(2) {
+	&__img3-middle {
 		position: absolute;
 		z-index: 2;
 		top: 5%;
 		left: 35%;
 	}
 
-	&__img3:nth-child(3) {
+	&__img3-right {
 		position: absolute;
 		top: 35%;
 		left: 80%;
@@ -392,6 +395,11 @@
 }
 
 .projects-gallery {
+	&__title {
+		width: 100%;
+		height: auto;
+	}
+
 	&__text {
 		margin: 10rem auto;
 		width: 48rem;

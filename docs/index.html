@@ -64,7 +64,7 @@
 			</div>
 		</section>
 
-		<section class="about" id="about" style="background-image: url('../images/about-bg.png');">
+		<section class="about" id="about">
 			<div class="container">
 				<h2 class="visually-hidden">Почему выбирают нас</h2>
 				<p class="about__subtitle">
@@ -80,8 +80,18 @@
 							цветов, форм и ароматов.
 						</p>
 						<div class="about__images about__arrangements">
-							<img class="about__img1" src="images/about1.png" loading="lazy" width="347" height="378" alt="">
-							<img class="about__img1" src="images/about2.png" loading="lazy" width="298" height="416" alt="">
+							<picture>
+								<source srcset="images/about1.avif" type="image/avif">
+								<source srcset="images/about1.webp" type="image/webp">
+								<img class="about__image about__img1-left" src="images/about1.png" loading="lazy" width="347" height="378"
+									alt="Фотография цветочной композиции">
+							</picture>
+							<picture>
+								<source srcset="images/about2.avif" type="image/avif">
+								<source srcset="images/about2.webp" type="image/webp">
+								<img class="about__image about__img1-right" src="images/about2.png" loading="lazy" width="298" height="416"
+									alt="Фотография цветочной композиции">
+							</picture>
 						</div>
 					</div>
 					<div class="about__item">
@@ -94,8 +104,18 @@
 							гармонии.
 						</p>
 						<div class="about__images about__instal">
-							<img class="about__img2" src="images/about3.png" loading="lazy" width="357" height="454" alt="">
-							<img class="about__img2" src="images/about4.png" loading="lazy" width="290" height="361" alt="">
+							<picture>
+								<source srcset="images/about3.avif" type="image/avif">
+								<source srcset="images/about3.webp" type="image/webp">
+								<img class="about__image about__img2-left" src="images/about3.png" loading="lazy" width="357" height="454"
+									alt="Фотография цветочной инсталляции">
+							</picture>
+							<picture>
+								<source srcset="images/about4.avif" type="image/avif">
+								<source srcset="images/about4.webp" type="image/webp">
+								<img class="about__image about__img2-right" src="images/about4.png" loading="lazy" width="290" height="361"
+									alt="Фотография цветочной инсталляции">
+							</picture>
 						</div>
 					</div>
 					<div class="about__item">
@@ -106,9 +126,24 @@
 							Наполните пространство жизнью, создавая уютную и вдохновляющую атмосферу с помощью растений и цветов.
 						</p>
 						<div class="about__images about__design">
-							<img class="about__img3" src="images/about5.png" loading="lazy" width="305" height="390" alt="">
-							<img class="about__img3" src="images/about6.png" loading="lazy" width="309" height="463" alt="">
-							<img class="about__img3" src="images/about7.png" loading="lazy" width="278" height="417" alt="">
+							<picture>
+								<source srcset="images/about5.avif" type="image/avif">
+								<source srcset="images/about5.webp" type="image/webp">
+								<img class="about__image about__img3-left" src="images/about5.png" loading="lazy" width="305" height="390"
+									alt="Фотография ботанического дизайна">
+							</picture>
+							<picture>
+								<source srcset="images/about6.avif" type="image/avif">
+								<source srcset="images/about6.webp" type="image/webp">
+								<img class="about__image about__img3-middle" src="images/about6.png" loading="lazy" width="309" height="463"
+									alt="Фотография ботанического дизайна">
+							</picture>
+							<picture>
+								<source srcset="images/about7.avif" type="image/avif">
+								<source srcset="images/about7.webp" type="image/webp">
+								<img class="about__image about__img3-right" src="images/about7.png" loading="lazy" width="278" height="417"
+									alt="Фотография ботанического дизайна">
+							</picture>
 						</div>
 					</div>
 				</div>
