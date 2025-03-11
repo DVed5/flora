@@ -79,10 +79,10 @@
 .about {
 	color: #09250C;
 	padding-top: 6.25rem;
-	background-image: url('../images/about-bg.webp');
+	background-image: url('../images/about-bg.png');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 33.375rem;
+	background-size: 534px;
 
 
 	&__subtitle {
@@ -346,14 +346,14 @@
 		object-fit: cover;
 	}
 
-	&__img:nth-child(2) {
+	&__img-middle {
 		position: absolute;
 		left: 22%;
 		top: -37%;
 		z-index: 2;
 	}
 
-	&__img:nth-child(3) {
+	&__img-right {
 		position: absolute;
 		right: -1%;
 		top: -5%;

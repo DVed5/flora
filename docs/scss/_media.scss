@@ -1,9 +1,4 @@
-// @media (max-width: 1235px, 768 планшеты, 480 мобилки) {
-
-// }
-
-
-@media (max-width: 1025px) {
+@media (max-width: 1020px) {
 
 	.top {
 		&__image {
@@ -17,7 +12,7 @@
 
 	.about {
 		background-position: center right;
-		background-size: 21rem;
+		background-size: 336px;
 
 		&__subtitle {
 			margin: 0 0 6rem;
@@ -41,21 +36,21 @@
 			margin: 0 15% 10%;
 		}
 
-		&__img2:nth-child(1) {
+		&__img2-left {
 			margin-top: -15%;
 		}
 
-		&__img2:nth-child(2) {
+		&__img2-right {
 			z-index: 0;
 			top: 10%;
 			left: 48%;
 		}
 
-		&__img3:nth-child(1) {
+		&__img3-left {
 			margin: -19% 0 27%;
 		}
 
-		&__img3:nth-child(3) {
+		&__img3-right {
 			display: none;
 		}
 	}
@@ -80,11 +75,11 @@
 
 
 	.projects-top {
-		&__img:nth-child(2) {
+		&__img-middle {
 			left: 34%;
 		}
 
-		&__img:nth-child(3) {
+		&__img-right {
 			top: 51%;
 			z-index: -1;
 		}
@@ -105,7 +100,7 @@
 	}
 
 	.about {
-		background-size: 15rem;
+		background-size: 240px;
 	}
 
 	.contacts {
@@ -121,16 +116,18 @@
 	}
 
 	.projects-top {
+		margin-bottom: 15rem;
+
 		&__img {
 			max-width: 70%;
 			height: auto;
 		}
 
-		&__img:nth-child(2) {
+		&__img-middle {
 			max-width: 50%;
 		}
 
-		&__img:nth-child(3) {
+		&__img-right {
 			top: 51%;
 			z-index: -1;
 		}
@@ -141,13 +138,22 @@
 			width: auto;
 		}
 	}
+
+	.gallery-item {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#loadMore {
+		margin: -190px auto 20px;
+	}
 }
 
 // смартфоны
 @media (max-width: 645px) {
 	.scroll-to-top {
-		width: 3.125rem;
-		height: 3.125rem;
+		width: 50px;
+		height: 50px;
 	}
 
 	.header {
@@ -258,15 +264,15 @@
 			margin: 0 5% 16%;
 		}
 
-		&__img1:nth-child(2) {
+		&__img1-right {
 			top: -19%;
 		}
 
-		&__img2:nth-child(2) {
+		&__img2-right {
 			left: 32%;
 		}
 
-		&__img3:nth-child(2) {
+		&__img3-middle {
 			top: 18%;
 			left: 31%;
 		}
@@ -306,28 +312,23 @@
 	}
 
 	.projects-top {
-		margin: 6rem 1rem 5rem;
+		margin: 6rem 1rem 10rem;
 
-		&__img:nth-child(1) {
+		&__img-left {
 			max-width: 100%;
 		}
 
-		&__img:nth-child(2) {
+		&__img-middle {
 			max-width: 39%;
 			left: 39%;
 			top: 12%;
 		}
 
-		&__img:nth-child(3) {
+		&__img-right {
 			max-width: 60%;
 			right: 4%;
 			top: 66%;
 		}
-	}
-
-	.gallery-item {
-		width: 95%;
-		margin: 0 auto;
 	}
 
 	.projects-gallery {
@@ -353,7 +354,7 @@
 	.about {
 		padding-top: 3.25rem;
 		background-position: center right;
-		background-size: 6rem;
+		background-size: 96px;
 
 		&__subtitle {
 			font-size: 0.875rem;
@@ -376,33 +377,33 @@
 			margin: 0 0 16% 3%;
 		}
 
-		&__img1:nth-child(1) {
+		&__img1-left {
 			width: 247px;
 			height: 278px;
 		}
 
-		&__img1:nth-child(2) {
+		&__img1-right {
 			width: 198px;
 			height: 316px;
 		}
 
-		&__img2:nth-child(1) {
+		&__img2-left {
 			width: 257px;
 			height: 354px;
 		}
 
-		&__img2:nth-child(2) {
+		&__img2-right {
 			width: 190px;
 			height: 261px;
 		}
 
-		&__img3:nth-child(1) {
+		&__img3-left {
 			width: 205px;
 			height: 290px;
 			margin: -15% 0 27%;
 		}
 
-		&__img3:nth-child(2) {
+		&__img3-middle {
 			width: 209px;
 			height: 363px;
 		}
@@ -451,19 +452,19 @@
 	}
 
 	.projects-top {
-		margin: 6rem .75rem 5rem;
+		margin: 6rem .75rem 14rem;
 
-		&__img:nth-child(1) {
+		&__img-left {
 			max-width: 73%;
 		}
 
-		&__img:nth-child(2) {
+		&__img-middle {
 			max-width: 54%;
-			left: 57%;
-			top: 23%;
+			left: 45%;
+			top: 21%;
 		}
 
-		&__img:nth-child(3) {
+		&__img-right {
 			max-width: 82%;
 			right: -4%;
 			top: 82%;
@@ -471,12 +472,21 @@
 	}
 
 	.gallery-item {
-		width: 77%;
+		width: 80%;
 	}
 
 	.projects-gallery {
+		&__title {
+			margin-bottom: 1rem;
+		}
+
 		&__text {
+			margin: 6rem auto 5rem;
 			font-size: 1.125rem;
 		}
+	}
+
+	#loadMore {
+		margin: -235px auto 13px;
 	}
 }
